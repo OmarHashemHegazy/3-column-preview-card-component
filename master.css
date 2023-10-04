@@ -1,0 +1,87 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+h2{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+button{
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid white;
+    padding: 10px 20px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.btn-one{
+    color: hsl(31, 77%, 52%);
+}
+.btn-two{
+    color: hsl(184, 100%, 22%);
+}
+.btn-three{
+    color: hsl(179, 100%, 13%);
+}
+button:hover{
+    background-color: transparent; color: white;
+}
+.main{
+    padding: 50px;
+}
+.is{
+    padding: 25px;
+}
+.is img{
+    padding: 25px;
+}
+.is h2{
+    padding: 30px;
+}
+.is p{
+    padding: 20px;
+    margin-bottom: 80px;
+}
+@media(min-width: 800px){
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        max-width: 790px;
+        margin: auto;
+    }
+}
+@media(max-width: 800px){
+    .sedans{
+        border-radius: 10px 10px 0 0 ;
+    }
+    .luxury{
+        border-radius: 0 0 10px 10px;
+    }
+}
